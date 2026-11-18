@@ -1,0 +1,21 @@
+{
+  "name": "dsh-skill-gen",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal single-trace skill generator for the isolated dsh dev home.",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  }
+}
